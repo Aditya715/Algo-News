@@ -15,7 +15,7 @@ def cnbc():
 			if title:
 				url_sec = title_sec.find("a", class_="Card-title")
 				src_url = url_sec.get("href")
-				time_sec = title_sec.find("a", class_="Card-time")
+				time_sec = title_sec.find("span", class_="Card-time")
 				news_time = time_sec.text if time_sec else None
 				temp = {
 					'title' 		: title,
